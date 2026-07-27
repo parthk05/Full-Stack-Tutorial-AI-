@@ -1,2 +1,14 @@
 fastapi==0.116.1
 uvicorn[standard]==0.35.0
+
+# Lesson 02 — settings / env
+pydantic-settings==2.10.1
+python-dotenv==1.1.1
+
+# Lesson 02 Part A — MySQL + SQLAlchemy
+sqlalchemy==2.0.41
+pymysql==1.1.1
+cryptography==45.0.5
+
+# Lesson 02 Part B — MongoDB (async Motor)
+motor==3.7.1
