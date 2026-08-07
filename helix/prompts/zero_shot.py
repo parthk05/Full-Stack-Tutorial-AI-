@@ -1,5 +1,6 @@
 """
 Step 2.1 — Zero-shot system prompt for Helix Prompt Desk
+(Still used via prompts.registry after Steps 2.2–2.4 — baseline control.)
 
 Theory (zero-shot):
   Send only a role/instruction (system) + the task (user). No worked examples.
@@ -13,6 +14,10 @@ When to use:
 When NOT enough alone (preview of later chapters):
   - Private Meridian facts the model never saw → invents plausible policy (hallucination)
   - Strict output shapes or classification → few-shot / structured outputs help more
+
+Compare with:
+  - Step 2.2 few_shot — examples beat long instructions for hr|security|finance routing
+  - Step 2.4 constrained — UNKNOWN instead of invented Meridian numbers
 """
 
 # Step 2.1.3 — identity + domain; intentionally no policy facts and no example Q&A

@@ -18,7 +18,10 @@ class Settings(BaseSettings):
     MODEL_NAME: str = "gemini-2.5-flash"
 
     # Step 4.2 preview — bump when you change system prompts so evals can compare versions
-    PROMPT_VERSION: str = "prompt_desk_v1"
+    # --- Step 2.1 historical ---
+    # PROMPT_VERSION: str = "prompt_desk_v1"
+    # Step 2.2–2.4 — desk now includes few_shot / cot / personas / constrained
+    PROMPT_VERSION: str = "prompt_desk_v2"
 
     model_config = SettingsConfigDict(
         env_file=".env",

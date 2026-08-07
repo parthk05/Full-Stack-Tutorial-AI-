@@ -1,5 +1,6 @@
 """
 Step 2.1 — response body for POST /v1/prompt
+Step 2.2–2.4 — same contract; `strategy` now echoes whichever technique ran.
 
 Why these fields: callers can see *what* answered (answer), *how* (strategy),
 *which model*, and *which prompt revision* — needed later for evals (Ch 06).
